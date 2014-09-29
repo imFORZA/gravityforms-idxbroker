@@ -12,10 +12,6 @@ Integrates Gravity Forms with IDX Broker allowing form submissions to be automat
 
 Currently when enabled this plugin will attempt to create a lead in IDX Broker for any form that contains emails, phone, address. The form must have at least the email field in order for a lead to be created. It will also create a password for the submitter, and send them an email with login information they can use to access IDX to save properties and searches.
 
-Possible Future Improvements
-* Ability to map fields for each form
-* Support to bulk upload past Gravity Form Entries
-
 == Installation ==
 * Install Gravity Forms
 * Install this Plugin
