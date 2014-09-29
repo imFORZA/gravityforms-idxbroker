@@ -150,20 +150,25 @@ function gravityforms_to_idxbroker_leads($entry, $form) {
 
 // Send Email to Submitter with IDX Login Info
 $message = "
-Thank You for contacting us, we have created a login for you:
+Thank you for completing our form.
 
-Login URL: ". get_bloginfo('url') ."
-Your Email: ". $email ."
-Your Password: ". $idxpassword ."
- ";
+Our team will be with in touch with you as soon as possible.
+
+In the meantime, we have gone ahead and created a FREE Member’s Only account through our website. With this account you can Search All Local Listings, Save Listings, Receive New Listing Notifications and even Book Showings….all from your computer.
+
+To start using your FREE account please visit our website at [". get_bloginfo('url') ."] and click on the LOGIN link. Your login information is:
+
+Username: ". $email ."
+Password: ". $idxpassword ."
+
+ "; // end message
  
  // Send
- wp_mail($email, 'Login and Get Property Updates', $message);
+ wp_mail($email, '['.get_bloginfo('url') .'] Access Your Complimentary Account Now', $message);
 
 
 
 } // end gravityforms_to_idxbroker_leads
-
 
 
 } // end GFIDXBroker
