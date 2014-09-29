@@ -164,7 +164,7 @@ Password: ". $idxpassword ."
  "; // end message
  
  // Send
- wp_mail($email, '['.get_bloginfo('url') .'] Access Your Complimentary Account Now', $message);
+ wp_mail($email, '['.get_bloginfo('name') .'] Access Your Complimentary Account Now', $message);
 
 
 
