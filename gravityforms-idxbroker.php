@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms IDX Broker Add-On
 Plugin URI: http://www.brandonhubbard.com
 Description: Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
-Version: 1.0.0
+Version: 1.0.1
 Author: imFORZA
 Author URI: http://www.imforza.com
 
@@ -165,24 +165,6 @@ Your Password: ". $idxpassword ."
 } // end gravityforms_to_idxbroker_leads
 
 
-
-/* Sends a debug email for all forms */    
-/*
-add_action("gform_after_submission", "gravityforms_idxform_debugemail", 10, 2);
-function gravityforms_idxform_debugemail($entry, $form){
-if (WP_DEBUG === true) {
-    // Lets get the IDs of the relevant fields and prepare an email message
-    $message = print_r($entry, true);
- 
-    // In case any of our lines are larger than 70 characters, we should use wordwrap()
-    $message = wordwrap($message, 70);
- 
-    // Send
-    mail(get_option( 'admin_email' ), 'Gravity Forms Debug Email', $message);
-    }
- }
-*/
-    
 
 } // end GFIDXBroker
  
