@@ -3,7 +3,7 @@ Contributors: bhubbard
 Tags: IDX Broker, Real Estate, Gravity Forms
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
 
@@ -21,6 +21,9 @@ Can I choose which fields get submitted?
 Currently No
 
 == Changelog ==
+
+= 1.0.2 =
+* Fixes for Gravity Form Check
 
 = 1.0.1 =
 * Improved Email sent to users who submit a form
