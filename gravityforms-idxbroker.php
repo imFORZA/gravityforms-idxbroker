@@ -9,7 +9,7 @@ textdomain: gfidxbroker
 Author URI: http://www.imforza.com
 
 
-IDX Broker API Documentation: http://middleware.idxbroker.com/docs/api/1.0.4/leads.php
+IDX Broker API Documentation: http://middleware.idxbroker.com/docs/api/methods/index.html#api-Leads-putLead
 
 */
 
