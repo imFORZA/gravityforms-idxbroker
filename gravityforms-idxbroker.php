@@ -37,7 +37,7 @@ if (class_exists("GFForms")) {
         // They are defined in GFAddOn and should be overridden.
 
         // The version number is used for example during add-on upgrades.
-        protected $_version = "1.0.2";
+        protected $_version = "1.5.1";
 
         // The Framework will display an appropriate message on the plugins page if necessary
         protected $_min_gravityforms_version = "1.8.7";
@@ -166,27 +166,27 @@ function gravityforms_to_idxbroker_leads($entry, $form) {
 	foreach($form['fields'] as &$field){
 
 
-		if( !empty($field['type'] == 'name')) {
+			if( $field['type'] == 'name') {
 			// the first name portion of a name field is always x.3
 			$firstnamepart = (string)$field['id'] . ".3";
 			$firstName = $entry[$firstnamepart];
 		}
 
-		if( !empty($field['type'] == 'name')) {
+		if( $field['type'] == 'name') {
 			// the last name portion of a name field is always x.6
 			$lastnamepart = (string)$field['id'] . ".6";
 			$lastName = $entry[$lastnamepart];
 		}
 
-		if( !empty($field['type'] == 'email')) {
+		if( $field['type'] == 'email') {
 			$email = $entry[$field['id']];
 		}
 
-		if( !empty($field['type'] == 'phone')) {
+		if( $field['type'] == 'phone') {
     		$phone = $entry[$field['id']];
         }
 
-		if( !empty($field['type'] == 'address')) {
+		if( $field['type'] == 'address') {
     		$streetpart = (string)$field['id'] . ".1";
     		$street = $entry[$streetpart];
     		$citypart = (string)$field['id'] . ".3";
