@@ -25,6 +25,7 @@ Currently No
 = 1.5.2 =
 * Added support for IDX Pre-defined Choices
 * Cleaned up messaging for IDX Broker Form Settings > Email Body
+* Add Uinstall Support
 
 = 1.5.1 =
 * Fix for php error
