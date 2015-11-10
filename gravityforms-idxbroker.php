@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms IDX Broker Add-On
 Plugin URI: http://www.brandonhubbard.com
 Description: Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
-Version: 1.5.0
+Version: 1.5.2
 Author: imFORZA
 textdomain: gfidxbroker
 Author URI: http://www.imforza.com
@@ -24,6 +24,9 @@ require_once('wp-updates-plugin.php');
 new WPUpdatesPluginUpdater_714( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
 
 
+include_once('idx-populated-dropdowns.php');
+
+
 // Make sure Gravity Forms is active and already loaded.
 if (class_exists("GFForms")) {
 
@@ -37,10 +40,10 @@ if (class_exists("GFForms")) {
         // They are defined in GFAddOn and should be overridden.
 
         // The version number is used for example during add-on upgrades.
-        protected $_version = "1.5.1";
+        protected $_version = "1.5.2";
 
         // The Framework will display an appropriate message on the plugins page if necessary
-        protected $_min_gravityforms_version = "1.8.7";
+        protected $_min_gravityforms_version = "1.9";
 
         // A short, lowercase, URL-safe unique identifier for the add-on.
         // This will be used for storing options, filters, actions, URLs and text-domain localization.
@@ -113,10 +116,9 @@ if (class_exists("GFForms")) {
                     "label"   => "Email Body",
                     "type"    => "textarea",
                     "name"    => "email_body",
-                    "tooltip" => "The body of the default email message. Note the IDX Broker Login information will be displayed below your message.",
-                    "class"   => "medium merge-tag-support mt-position-right"
+                    "tooltip" => "<p>The body of the default email message.</p> <p><strong>Note:</strong> the leads IDX Broker Login information will be displayed below your message.</p>",
+                    "class"   => "medium mt-position-right"
                 ),
-
             )
         )
     );
@@ -261,6 +263,10 @@ Password: ". $idxpassword ."
 
 
 } // end gravityforms_to_idxbroker_leads
+
+
+
+
 
 
 } // end GFIDXBroker
