@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms IDX Broker Add-On
 Plugin URI: http://www.brandonhubbard.com
 Description: Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
-Version: 1.5.2
+Version: 1.5.3
 Author: imFORZA
 textdomain: gfidxbroker
 Author URI: http://www.imforza.com
@@ -263,6 +263,29 @@ Password: ". $idxpassword ."
 
 
 } // end gravityforms_to_idxbroker_leads
+
+
+
+
+
+/*
+* Fix Gravity Forms on IDX Wrappers
+*/
+
+function gfidxbroker_update_form_urls( $form_tag, $form ) {
+
+		if ( is_singular( 'idx-wrapper' ) ) {
+
+			global $post;
+
+			$form_tag = preg_replace( "|action='(.*?)'|", "action='". get_permalink() ."'", $form_tag );
+   		 	return $form_tag;
+   		} else {
+
+	   		return $form_tag;
+   		}
+}
+add_filter( 'gform_form_tag', 'gfidxbroker_update_form_urls', 10, 2 );
 
 
 
