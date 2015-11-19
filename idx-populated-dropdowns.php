@@ -13,16 +13,16 @@ if (class_exists("GFForms")) {
 function idxbroker_add_pricerange_choices( $choices ) {
 
   $choices['IDX Broker - Price Ranges'] = array(
-	  	'Select Price| ',
-  		'$100,000|10000',
-  		'$200,000|20000',
-  		'$300,000|30000',
-  		'$400,000|40000',
-  		'$500,000|50000',
-  		'$600,000|60000',
-  		'$700,000|70000',
-  		'$800,000|80000',
-  		'$900,000|90000',
+	  	'$50,000|50000',
+  		'$100,000|100000',
+  		'$200,000|200000',
+  		'$300,000|300000',
+  		'$400,000|400000',
+  		'$500,000|500000',
+  		'$600,000|600000',
+  		'$700,000|700000',
+  		'$800,000|800000',
+  		'$900,000|900000',
   		'$1,000,000|1000000',
   		'$2,000,000|2000000',
   		'$3,000,000|3000000',
@@ -115,6 +115,22 @@ function idxbroker_add_bedbathcount_choices( $choices ) {
    return $choices;
 }
 add_filter( 'gform_predefined_choices', 'idxbroker_add_bedbathcount_choices' );
+
+
+
+function idxbroker_add_perpage_choices( $choices ) {
+
+  $choices['IDX Broker - Results per Page'] = array(
+  		'5',
+  		'10',
+  		'25',
+  		'50',
+  		'100',
+
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_perpage_choices' );
 
 
 
