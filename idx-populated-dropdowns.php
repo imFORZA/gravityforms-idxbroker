@@ -134,4 +134,281 @@ add_filter( 'gform_predefined_choices', 'idxbroker_add_perpage_choices' );
 
 
 
+function idxbroker_add_financial_choices( $choices ) {
+
+  $choices['IDX Broker - Financial'] = array(
+  		'Contingent',
+  		'Forclosure',
+  		'Lease option',
+  		'Lender owned',
+  		'Licensed owner',
+  		'Short Sale'
+
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_financial_choices' );
+
+
+
+function idxbroker_add_construction_choices( $choices ) {
+
+  $choices['IDX Broker - Construction'] = array(
+  		'Brick accent',
+  		'Brick exterior',
+  		'Concrete block stucco',
+  		'Frame and stucco exterior',
+  		'Modular construction',
+  		'Stone exterior',
+  		'Stucco exterior',
+  		'Vinyl/metal siding',
+  		'Wood siding'
+
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_construction_choices' );
+
+
+
+function idxbroker_add_stories_choices( $choices ) {
+
+  $choices['IDX Broker - Stories'] = array(
+  		'Multi-story',
+  		'Single story',
+  		'Tri-level',
+  		'Two story'
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_stories_choices' );
+
+
+
+function idxbroker_add_style_choices( $choices ) {
+
+  $choices['IDX Broker - Style'] = array(
+  		'Duplex',
+  		'Mediterranean style',
+  		'Ranch',
+  		'Spanish',
+  		'Split-level'
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_style_choices' );
+
+
+
+function idxbroker_add_lotsize_choices( $choices ) {
+
+  $choices['IDX Broker - Lot Size'] = array(
+  		'lot size between 1/2 and 3/4 acre',
+  		'lot size between 1/4 and 1/2 acre',
+  		'lot size between 3 and 5 acres',
+  		'lot size is 1/4 acre or less',
+  		'lot size is between 1 and 2 acres',
+  		'lot size is between 2 and 3 acres',
+  		'lot size is between 5 and 10 acres',
+  		'lot size of 10 or more acres',
+  		'lots size between 3/4 and 1 acre'
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_lotsize_choices' );
+
+
+
+
+function idxbroker_add_general_choices( $choices ) {
+
+  $choices['IDX Broker - General'] = array(
+  		'Cats allowed',
+  		'Dogs allowed',
+  		'No pets allowed',
+  		'Pet restrictions',
+  		'Pets allowed',
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_general_choices' );
+
+
+
+function idxbroker_add_inclusions_choices( $choices ) {
+
+  $choices['IDX Broker - Inclusions'] = array(
+  		'Built-in oven',
+  		'Clothes dryer',
+  		'Clothes washer',
+  		'Dishwasher',
+  		'Disposal',
+  		'Electric range and oven',
+  		'Freezer',
+  		'Furnished',
+  		'Gas range and oven',
+  		'Microwave oven',
+  		'Partially furnished',
+  		'Range and oven',
+  		'Refrigerator',
+  		'Self-cleaning oven',
+  		'Trash compactor',
+  );
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_inclusions_choices' );
+
+
+function idxbroker_add_exterior_choices( $choices ) {
+
+  $choices['IDX Broker - Exterior'] = array(
+  		'Balcony',
+  		'Deck',
+  		'Enclosed patio',
+  		'Greenhouse',
+  		'Outdoor lights',
+  		'Patio',
+  		'Storage/out-building(s)',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_exterior_choices' );
+
+
+
+function idxbroker_add_location_choices( $choices ) {
+
+  $choices['IDX Broker - Location'] = array(
+  		'Eastern exposure',
+  		'Northeastern exposure',
+  		'Northern exposure',
+  		'Northwestern exposure',
+  		'Southeastern exposure',
+  		'Southern exposure',
+  		'Southwestern exposure',
+  		'Western exposure'
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_location_choices' );
+
+
+
+function idxbroker_add_condition_choices( $choices ) {
+
+  $choices['IDX Broker - Condition'] = array(
+  		'Fixer-upper',
+  		'Home warranty (see agent for details)',
+  		'New construction',
+  		'currently under construction',
+  		'Sold As Is|Sold %22As is%22',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_condition_choices' );
+
+
+
+function idxbroker_add_recreation_choices( $choices ) {
+
+  $choices['IDX Broker - Recreation'] = array(
+  		'Above ground pool',
+  		'Automatic pool chlorination',
+  		'Automatic pool cleaner',
+  		'BBQ',
+  		'Boat dockage',
+  		'Boat dockage available',
+  		'Boat facilities',
+  		'Fenced pool area',
+  		'Heated pool',
+  		'In-ground',
+  		'In-ground swimming pool',
+  		'Indoor swimming pool',
+  		'Private beach',
+  		'Sauna',
+  		'Solar heated pool',
+  		'Spa',
+  		'Tennis court',
+  		'screen enclosed swimming pool',
+  		'swimming pool',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_recreation_choices' );
+
+
+
+function idxbroker_add_interior_choices( $choices ) {
+
+  $choices['IDX Broker - Interior'] = array(
+  		'Breakfast bar',
+  		'Built-in features',
+  		'Ceiling fan(s)',
+  		'Central vacuum system',
+  		'Dry bar',
+  		'Fire sprinkler system',
+  		'Intercom system',
+  		'Jetted bathtub',
+  		'Kitchen isle',
+  		'Pantry',
+  		'Secondary bedrooms split from master bed',
+  		'Security features',
+  		'Skylight(s)',
+  		'Vaulted ceilings',
+  		'Walk-in closet(s)',
+  		'Wetbar',
+  		'Window treatments',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_interior_choices' );
+
+
+
+
+
+function idxbroker_add_heatcool_choices( $choices ) {
+
+  $choices['IDX Broker - Heat/Cool'] = array(
+  		'Central air conditioning',
+  		'Central heat',
+  		'Electric heating',
+  		'Heat pump',
+  		'Natural gas water heater',
+  		'Oil heating',
+  		'Radiant heat',
+  		'Solar heating features',
+  		'Wall heating unit(s)',
+  		'Wall or window air conditioner(s)',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_heatcool_choices' );
+
+
+
+function idxbroker_add_community_choices( $choices ) {
+
+  $choices['IDX Broker - Community'] = array(
+  		'Biking/fitness trail',
+  		'Gated community',
+  		'On-site guard',
+  		'Picnic area(s)',
+  		'community boat facilities',
+  		'community childrens play area',
+  		'community clubhouse(s)',
+  		'community exercise area(s)',
+  		'community golf',
+  		'community horse facilities',
+  		'community laundry facilities',
+  		'community sauna(s)',
+  		'community spa(s)',
+  		'community swimming pool(s)',
+  		'community tennis court(s)',
+  		);
+   return $choices;
+}
+add_filter( 'gform_predefined_choices', 'idxbroker_add_community_choices' );
+
+
 }
