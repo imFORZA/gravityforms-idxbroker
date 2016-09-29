@@ -1,5 +1,5 @@
 === Gravity Forms IDX Broker Add-On ===
-Contributors: bhubbard
+Contributors: imforza, bhubbard
 Tags: IDX Broker, Real Estate, Gravity Forms
 Requires at least: 4.0
 Tested up to: 4.3.1
