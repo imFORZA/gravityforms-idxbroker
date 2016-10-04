@@ -1,4 +1,4 @@
-=== IDX Broker Connect for Gravity Forms ===
+=== IDX Connect for Gravity Forms ===
 Contributors: imforza, bhubbard
 Tags: IDX Broker, Real Estate, Gravity Forms
 Requires at least: 4.0
