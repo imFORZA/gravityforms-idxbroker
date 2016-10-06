@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Gravity Forms IDX Broker Add-On
+Plugin Name: IDX Connect for Gravity Forms
 Plugin URI: https://www.imforza.com
 Description: Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
 Version: 1.5.4
@@ -16,7 +16,7 @@ IDX Broker API Documentation: http://middleware.idxbroker.com/docs/api/methods/i
 
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 if (!is_plugin_active('gravityforms/gravityforms.php')) {
-    deactivate_plugins( 'gravityforms-idxbroker/gravityforms-idxbroker.php' );
+    deactivate_plugins( 'idx-connect-for-gravityforms/gravityforms-idxbroker.php' );
 }
 
 
@@ -46,16 +46,16 @@ if (class_exists("GFForms")) {
         protected $_slug = "gfidxbroker";
 
         // Relative path to the plugin from the plugins folder.
-        protected $_path = "gravityforms-idxbroker/gravityforms-idxbroker.php";
+        protected $_path = "idx-connect-for-gravityforms/gravityforms-idxbroker.php";
 
         // Full path the the plugin.
         protected $_full_path = __FILE__;
 
         // Title of the plugin to be used on the settings page, form settings and plugins page.
-        protected $_title = "Gravity Forms IDX Broker Add-On";
+        protected $_title = "IDX Connect for GravityForms";
 
         // Short version of the plugin title to be used on menus and other places where a less verbose string is useful.
-        protected $_short_title = "IDX Broker";
+        protected $_short_title = "IDX Connect";
 
         private static $_instance = null;
 
