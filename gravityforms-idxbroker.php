@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Gravity Forms IDX Broker Add-On
-Plugin URI: http://www.brandonhubbard.com
+Plugin URI: https://www.imforza.com
 Description: Integrates Gravity Forms with IDX Broker allowing form submissions to be automatically sent to your IDX Broker account.
 Version: 1.5.4
-Author: imFORZA
+Author: imforza, bhubbard, sfgarza
 textdomain: gfidxbroker
 Author URI: http://www.imforza.com
 
@@ -18,10 +18,6 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 if (!is_plugin_active('gravityforms/gravityforms.php')) {
     deactivate_plugins( 'gravityforms-idxbroker/gravityforms-idxbroker.php' );
 }
-
-// Update Feature
-require_once('wp-updates-plugin.php');
-new WPUpdatesPluginUpdater_714( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));
 
 
 include_once('idx-populated-dropdowns.php');
