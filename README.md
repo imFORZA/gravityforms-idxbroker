@@ -1,4 +1,9 @@
 # IDX Connect for Gravity Forms
+
+[![Code Climate](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/badges/07e0785f61363a085d45/gpa.svg)](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/feed)
+[![Test Coverage](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/badges/07e0785f61363a085d45/coverage.svg)](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/coverage)
+[![Issue Count](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/badges/07e0785f61363a085d45/issue_count.svg)](https://codeclimate.com/repos/57f6e7efe2a3da78ce001083/feed)
+
 Contributors: imforza, bhubbard
 Tags: IDX Broker, Real Estate, Gravity Forms, imFORZA
 Requires at least: 4.0
